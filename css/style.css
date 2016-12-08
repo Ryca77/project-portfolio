@@ -107,17 +107,18 @@ body {
 }
 
 .filler {
-	height: 300px;
+	height: 90px;
+	background-color: rgba(255,255,255,0.85);
 }
 
 .projects {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	background-color: rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,0.85);
 	box-sizing: border-box;
-	border-top: 0.5px solid rgba(0,0,0,0.5);
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
+	text-align: justify;
 }
 
 .projects-header {
@@ -126,7 +127,7 @@ body {
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 }
 
-.alike {
+.alike, .zombie, .bike {
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 }
 
@@ -143,20 +144,41 @@ body {
 	background-size: cover;
 	margin-top: 20px;
 	width: 640px;
-	height: 437px;
+	height: 100%;
 	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.bike-image {
+	background-image: url('../images/bike-app-still-noborder.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	width: 640px;
+	height: 100%;
+	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.quiz-image {
+	background-image: url('../images/quiz-app-still-noborder.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	width: 640px;
+	height: 100%;
+	transition: 1.5s ease-in-out;
+	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+}
+
+.image-container {
+	margin: 0 auto;
+	width: 640px;
+	height: 437px;
 }
 
 .image-container div:hover {
 	-webkit-filter: blur(3px);
-}
-
-.image-container {
-	display: block;
-	margin: 0 auto;
-	width: 640px;
-	height: 437px;
-	box-shadow: inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
 }
 
 .technologies {
@@ -169,80 +191,12 @@ body {
 	margin-left: 10px;
 }
 
-.portfolio {
-	width: 100%;
-	height: 425px;
-	padding: 20px;
-	box-sizing: border-box;
-	border-bottom: 0.5px solid rgba(0,0,0,0.5);
-}
-
-.project-list {
-	text-align: center;
-}
-
-.project-list div {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
-}
-
-.project-container div:hover {
-	-webkit-filter: blur(3px);
-}
-
-.project-container {
-	border: 1px solid rgba(0,0,0,0.5);
-	border-radius: 5px;
-	width: 40%;
-	height: 300px;
-	margin-left: 15px;
-	margin-right: 15px;
-	overflow: hidden;
-}
-
-.quiz {
-	background-image: url('../images/quiz-app-still-noborder.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	transition: 1.5s ease-in-out;
-}
-
-.city-bike {
-	background-image: url('../images/bike-app-still-noborder.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	transition: 1.5s ease-in-out;
-}
-
-.quiz:hover, .city-bike:hover {
-	transform: scale(1.3);
-}
-
-.project-list p {
-	position: absolute;
-	margin-left: 15px;
-	margin-right: 15px;
-	bottom: 0px;
-	padding: 5px;
-	border: 1px solid rgba(0,0,0,0.5);
-	border-radius: 5px;
-	background-color: rgba(0,0,0,0.7);
-	font-size: 15px;
-	color: #FFFFFF;
-	display: none;
-}
-
 .about-me {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.85);
 	text-align: justify;
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 }
@@ -272,16 +226,16 @@ body {
 	.menu-icon {
 		display: unset;
 	}
-	.projects {
-		height: 750px;
+	.alike-video {
+		width: 480px;
+		height: 270px;
 	}
-	.project-list {
-		display: block;
-		margin: 0 auto;
+	.zombie-image, .bike-image, .quiz-image {
+		width: 480px;
 	}
-	.project-container {
-		width: 70%;
-		margin-bottom: 20px;
+	.image-container {
+		width: 480px;
+		height: 327.75px;
 	}
 }
 
@@ -289,21 +243,21 @@ body {
 	body {
 		background-size: 300%;
 	}
-	.quote {
-		font-size: 30px;
+	.filler {
+		height: 60px;
 	}
-	.leonardo {
+	.descriptions, .me {
 		font-size: 12px;
 	}
-	.projects {
-		height: 650px;
+	.alike-video {
+		width: 320px;
+		height: 180px;
 	}
-	.project-list {
-		display: block;
-		margin: 0 auto;
+	.zombie-image, .bike-image, .quiz-image {
+		width: 320px;
 	}
-	.project-container {
-		width: 80%;
-		height: 250px;
+	.image-container {
+		width: 320px;
+		height: 218.5px;
 	}
 }	
