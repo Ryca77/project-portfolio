@@ -12,7 +12,7 @@ body {
 	display: table;
 	width: 100%;
 	height: 50px;
-	margin-top: 20px;
+	margin-top: 10px;
 	box-sizing: border-box;
 	background-color: rgba(0,0,0,0.7);
 	border-top: 0.5px solid rgba(255,255,255,0.5);
@@ -107,15 +107,15 @@ body {
 }
 
 .filler {
-	height: 90px;
-	background-color: rgba(255,255,255,0.85);
+	height: 50px;
+	background-color: rgba(255,255,255,1);
 }
 
 .projects {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,1);
 	box-sizing: border-box;
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 	text-align: justify;
@@ -181,8 +181,18 @@ body {
 	-webkit-filter: blur(3px);
 }
 
+.code {
+	float: right;
+	padding: 3px;
+	border: 1px solid rgba(0,0,0,0.7);
+	border-radius: 3px;
+	color: rgba(0,0,0,0.7);
+	font-size: 14px;
+	text-decoration: none;
+}
+
 .technologies {
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -196,7 +206,7 @@ body {
 	height: 100%;
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,1);
 	text-align: justify;
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 }
@@ -206,7 +216,7 @@ body {
 	height: 225px;
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,1);
 	border-bottom: 0.5px solid rgba(0,0,0,0.5);
 }
 
@@ -244,9 +254,9 @@ body {
 		background-size: 300%;
 	}
 	.filler {
-		height: 60px;
+		height: 50px;
 	}
-	.descriptions, .me {
+	.descriptions, .me, .code {
 		font-size: 12px;
 	}
 	.alike-video {
@@ -255,6 +265,9 @@ body {
 	}
 	.zombie-image, .bike-image, .quiz-image {
 		width: 320px;
+	}
+	.zombie-header {
+		width: 50%;
 	}
 	.image-container {
 		width: 320px;
